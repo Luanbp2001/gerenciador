@@ -2,11 +2,20 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Task from "./components/Task";
 import AddTask from "./components/AddTask";
 import TaskDetails from "./components/TaskDetails";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [tasks, setTasks] = useState([]);
 
+  useEffect(() => {
+    const savedTasks = localStorage.getItem("tasks");
+    if (savedTasks) {
+      setTasks(JSON.parse(savedTasks));
+    }
+  }, []);
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
   const addTask = (taskName) => {
     const newTask = {
       id: Date.now(),
