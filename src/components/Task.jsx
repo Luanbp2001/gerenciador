@@ -9,10 +9,15 @@ function Task({ tasks, onDelete }) {
   const [isMarked, setIsMarked] = useState({});
 
   function marked(id) {
-    setIsMarked((prev) => ({
-      ...prev,
-      [id]: !prev[id],
-    }));
+    setIsMarked((prev) => {
+      const newState = { ...prev, [id]: !prev[id] };
+
+      if (newState[id] && "vibrate" in navigator) {
+        navigator.vibrate(200);
+      }
+
+      return newState;
+    });
   }
 
   return (
@@ -30,7 +35,7 @@ function Task({ tasks, onDelete }) {
             >
               {task.name}
             </Button>
-            <ButtonDetails color="red">
+            <ButtonDetails>
               <Link to={`/task/${task.id}`}>
                 <i className="bi bi-arrows-fullscreen"></i>
               </Link>
