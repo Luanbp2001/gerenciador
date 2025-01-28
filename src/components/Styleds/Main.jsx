@@ -15,7 +15,7 @@ export const MainTarefas = styled(Main)`
 `;
 export const MainInput = styled(Main)`
   flex-direction: row;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 `;
 export const MainDetails = styled(Main)`
   gap: 1rem;
