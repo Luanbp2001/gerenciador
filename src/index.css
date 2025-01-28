@@ -20,12 +20,12 @@ h1 {
 }
 @media (max-width: 513px) {
   h1 {
-    width: 450px;
+    max-width: 450px;
   }
 }
 @media (max-width: 460px) {
   h1 {
-    width: 100%;
+    max-width: 360px;
     font-size: 1.4rem;
   }
 }
