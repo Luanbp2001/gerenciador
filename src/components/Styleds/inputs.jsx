@@ -11,3 +11,18 @@ export const Input = styled.input`
   font-size: 1rem;
   border-radius: 5px;
 `;
+export const Textarea = styled.textarea`
+  background: rgb(217, 217, 217);
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  word-spacing: -3px;
+  &::placeholder {
+    letter-spacing: -1px;
+    font-size: 1.1rem;
+    word-spacing: -3px;
+  }
+`;

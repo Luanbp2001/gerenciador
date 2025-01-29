@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-  width: 80%;
+  width: 100%;
   background: black;
   color: white;
   font-weight: 500;
@@ -39,8 +39,7 @@ export const DeletTask = styled(Button)`
   border: none;
 `;
 export const ButtonAdd = styled(Button)`
-  width: 10%;
-  margin-left: 1%;
+  width: 100%;
   background: rgb(78, 75, 75);
   text-align: center;
   border: none;

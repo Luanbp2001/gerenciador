@@ -16,10 +16,11 @@ function App() {
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
-  const addTask = (taskName) => {
+  const addTask = (taskName, text) => {
     const newTask = {
       id: Date.now(),
       name: taskName,
+      description: text,
     };
     setTasks((prevTasks) => [...prevTasks, newTask]);
   };

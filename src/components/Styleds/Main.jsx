@@ -14,12 +14,14 @@ export const MainTarefas = styled(Main)`
   align-items: center;
 `;
 export const MainInput = styled(Main)`
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 0.5rem;
+  row-gap: 0.5rem;
   background: rgb(36, 35, 35);
 `;
 export const MainDetails = styled(Main)`
   gap: 1rem;
-  align-items: center;
   background: rgb(36, 35, 35);
+  text-align: start;
+  padding: 1rem;
 `;
