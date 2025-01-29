@@ -22,7 +22,7 @@ export const Textarea = styled.textarea`
   word-spacing: -3px;
   &::placeholder {
     letter-spacing: -1px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     word-spacing: -3px;
   }
 `;
