@@ -23,7 +23,7 @@ export const Button = styled.button`
 `;
 
 export const ButtonDetails = styled(Button)`
-  width: 10%;
+  width: 15%;
   margin-left: 1%;
   background: rgb(0, 0, 0);
   text-align: center;
@@ -31,7 +31,7 @@ export const ButtonDetails = styled(Button)`
 `;
 
 export const DeletTask = styled(Button)`
-  width: 10%;
+  width: 15%;
   margin-left: 1%;
   background: rgb(0, 0, 0);
   color: white;
